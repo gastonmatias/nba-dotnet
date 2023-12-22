@@ -1,0 +1,41 @@
+# Archivos de configuración
+*.swp
+*.suo
+*.user
+*.sln.docstates
+
+# Carpetas de salida
+bin/
+obj/
+
+# Carpetas generadas por Visual Studio
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de compilación .NET
+[Tt]est[Rr]esult*/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]og.txt
+
+# Otros archivos y carpetas comunes
+Thumbs.db
+Desktop.ini
+*.dbmdl
+*.dbproj.schemaview
+*.pfx
+*.publishsettings
+
+# Migraciones de Entity Framework
+./nba-dotnet/Migrations/
+Migrations
+*.resx
+*.resources
+
+# ConnectionStrings a bd
+appsettings.Development.json

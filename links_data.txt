@@ -1,0 +1,6 @@
+
+# teams (contiene estadistica historica x jugador)
+https://www.nba.com/warriors/roster
+
+# player (contiene birthdate, height en cms, weight en kgs)
+https://www.nba.com/player/201939/stephen-curry/bio
