@@ -10,16 +10,19 @@ namespace nba_dotnet.Helpers
         {
             //* indicar en <> 1) fuente, 2) destino -------
 
+            //! PLAYER ---------------------------------------------------------------------------------------------
             CreateMap<Player, PlayerDTO>()
-            .ForMember(dest => dest.DateOfBirth, opt => opt.MapFrom(src => src.DateOfBirth.ToString("dd-MM-yyyy")))
-            ;
+            .ForMember(dest => dest.DateOfBirth, opt => opt.MapFrom(src => src.DateOfBirth.ToString("dd-MM-yyyy")));
 
             CreateMap<CreatePlayerDTO, Player>()
-            .ForMember(dest => dest.DateOfBirth, opt => opt.MapFrom(src => DateTime.Parse(src.DateOfBirth)))
-            ;
+            .ForMember(dest => dest.DateOfBirth, opt => opt.MapFrom(src => DateTime.Parse(src.DateOfBirth)));
 
             CreateMap<UpdatePlayerDTO, Player>();                
-                
+
+            //! TEAM ---------------------------------------------------------------------------------------------
+            CreateMap<Team,TeamDTO>();
+            CreateMap<CreateTeamDTO,Team>();
+            CreateMap<UpdateTeamDTO,Team>();
         }
     }
 }

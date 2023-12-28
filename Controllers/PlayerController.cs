@@ -89,7 +89,7 @@ namespace nba_dotnet.Controllers
             var response = new
             {
                 message = "Created",
-                data = playerDTO // Puedes ajustar esto según tus necesidades
+                data = playerDTO 
             };
 
             //! FUNCA otorgando correctamente el " location: http://localhost:5097/api/players/{id}"

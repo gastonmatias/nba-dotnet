@@ -5,7 +5,8 @@ namespace nba_dotnet.DTOs
     {
         public int Id { get; set; }
         public string TeamName { get; set; }
+        public string Coach { get; set; }
         public string City { get; set; }
-        public string Conference { get; set; }
+        public int ConferenceId { get; set; }
     }
 }
